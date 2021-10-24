@@ -4,17 +4,9 @@ import OpenGraphMeta from '../components/meta/OpenGraphMeta';
 import TwitterCardMeta from '../components/meta/TwitterCardMeta';
 import { SocialList } from '../components/SocialList';
 
-import { Head } from 'next';
-
 export default function Index() {
 	return (
 		<Layout>
-			<Head>
-				<script
-					type="text/javascript"
-					src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-				></script>
-			</Head>
 			<BasicMeta url={'/'} />
 			<OpenGraphMeta url={'/'} />
 			<TwitterCardMeta url={'/'} />
